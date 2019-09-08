@@ -36,11 +36,7 @@ namespace Array2
             Console.Write(string.Join(", ", sortedarr));
             
             //Стандартный метод Sort класса Array
-            //Array.Sort(arr1);
-            //for (int i = 0; i < arr1.Length; i++)
-            //{
-            //    Console.Write(arr1[i] + " ");
-            //}
+            //Array.Sort(arr1);           
         }
     }
 }
