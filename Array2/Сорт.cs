@@ -8,23 +8,19 @@ namespace Array2
         {
             int i = 0;
             int temp;//временное значение элемента массива
-            bool flag = false;//сигнал того что был обмен местами элементов массива
+           
 
-            while (i < arr1.Length)
+            while (i < arr1.Length-1)
             {
-                if (i + 1 != arr1.Length && arr1[i] > arr1[i + 1])
+                if ( arr1[i] > arr1[i + 1])
                 {
                     temp = arr1[i];
                     arr1[i] = arr1[i + 1];
-                    arr1[i + 1] = temp;
-                    flag = true;
-                }
-                i++;
-                if (i == arr1.Length && flag == true)
-                {
-                    flag = false;
+                    arr1[i + 1] = temp;                    
                     i = 0;
+                    continue;
                 }
+                i++;                
             }
             return (arr1);
         }

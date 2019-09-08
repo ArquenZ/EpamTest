@@ -16,8 +16,7 @@ namespace Факториал
             return b;
         }
         static void Main(string[] args)
-        {
-            //try
+        {            
             uint a = Convert.ToUInt32(Console.ReadLine());
             
             Console.WriteLine(Fact(a));
