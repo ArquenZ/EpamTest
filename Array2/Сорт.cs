@@ -32,11 +32,9 @@ namespace Array2
         static void Main(string[] args)
         {
             int[] arr1 = new int[10] {14, 5, 12, 5, 65, 65, 13, 2, 5, 6 };
+            int[] sortedarr = SortArr(arr1);
+            Console.Write(string.Join(", ", sortedarr));
             
-            for (int i = 0; i < arr1.Length; i++)
-            {
-                Console.Write(SortArr(arr1)[i] + " ");
-            }
             //Стандартный метод Sort класса Array
             //Array.Sort(arr1);
             //for (int i = 0; i < arr1.Length; i++)
